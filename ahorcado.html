@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <script src="ahorcado.js"></script>
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/addex" type="text/css"/>
+  </head>
+  <body>
+
+      <h1>
+        <font align='left' face="AddeXMedium" size=30>HANGMAN</font>
+      </h1>
+
+      <img id="myImage" src="h0.jpg" width="300" height="380" align='left'>
+      <p>
+      <font face="AddeXMedium" size='5' align='left'>Press Play to start game</font>
+      </p>
+
+      <button align='left' type="button" onclick="playHangman()">
+      <img src=play.png width='30' height='30'>
+      </button>
+      <p></p>
+      <p>
+      <font face="AddeXMedium" id="acertada" size='5' align='left'>Victories:</font>
+      </p>
+
+      <input align='left' id="word" maxlength=10 size=10>
+      <button align='left' onclick="writeBox()">
+      <img src=check.png width="30" height="30">
+      </button>
+      <button align='left' type="button" onclick="playAgain()">
+      <img src=back.png width='30' height="30">
+      </button>
+      <p>
+      <font face="AddeXMedium" id="word_guess" size='5' align='left'></font>
+      </p>
+      <p>
+      <font face="AddeXMedium" id="notice" size='5' align='left'></font>
+      </p>
+
+
+  </body>
+</html>
